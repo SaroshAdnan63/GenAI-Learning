@@ -76,7 +76,10 @@ AIMessage
 Generative AI/
 │
 ├── chatmodels/
-│   └── chat.py
+|   |_chat.py
+│   └── chatbot.py
+|   |_huggingface.py
+|   |_UIchatbot.py
 │
 ├── .gitignore
 ├── README.md
@@ -84,6 +87,19 @@ Generative AI/
 └── uv.lock
 
 
+📅 Day 3 — Streamlit & Mood-Based Chatbot UI
+What I Learned
+
+Today I learned the basics of Streamlit and how it can be used to create a simple web-based user interface using Python.
+I also created a Mood-Based Chatbot where the user can choose the mood/personality of the AI agent before starting the conversation.
+
+Mood Options
+The user can choose between:
+ Sad Mood
+ Funny Mood
+Angry Mood
+
+Based on the selected mood, a different SystemMessage is passed to the LLM to control how the chatbot responds.
 
 
 ##  Goal
