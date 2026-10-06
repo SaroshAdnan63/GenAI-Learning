@@ -27,14 +27,12 @@ elif choice == "3":
 else:
     mode = SystemMessage(content="You are a helpful AI agent")
     
-messages=[
-    SystemMessage(content=mode)
-]
+messages=[mode]
 while True:
     prompt=input("You :")
-    messages.append(HumanMessage(content=prompt))
     if prompt=="0":
         break
+    messages.append(HumanMessage(content=prompt))
     response=model.invoke(messages)
     messages.append(AIMessage(content=response.text))
     print("Bot :",response.text)

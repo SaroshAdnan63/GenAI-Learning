@@ -102,6 +102,47 @@ Angry Mood
 Based on the selected mood, a different SystemMessage is passed to the LLM to control how the chatbot responds.
 
 
+📅 Day 4 — Structured Prompts & Movie Information Extractor
+What I Learned
+
+Today I learned about Structured Prompts and how prompts can be designed with clear instructions and input variables.
+
+I also started working on a Movie Information Extractor using LangChain.
+
+Structured Prompts
+
+I learned how to create prompts with separate sections for:
+
+System instructions
+Human input
+Dynamic variables
+
+Instead of writing one large hard-coded prompt, structured prompts allow me to organize instructions and user input more clearly.
+
+For example:
+
+System
+  ↓
+Instructions for the AI
+  ↓
+Human
+  ↓
+Movie information provided by the user
+  ↓
+LLM
+  ↓
+Structured movie information
+
+Movie Information Extractor 
+I started building a simple application that takes information about a movie and asks the LLM to extract the useful information from it.
+The goal is to convert unstructured movie-related text into useful structured information.
+
+What I Practiced
+Creating structured prompts with LangChain
+Using ChatPromptTemplate
+Creating system and human prompt messages
+
+
 ##  Goal
 
 To build a strong understanding of Generative AI concepts and gradually create real-world applications using LLMs, LangChain, embeddings, RAG, agents, and other GenAI technologies.
