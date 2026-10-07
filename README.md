@@ -143,6 +143,23 @@ Using ChatPromptTemplate
 Creating system and human prompt messages
 
 
+📅 Day 5 — Structured Output & JSON Schema
+What I Learned
+
+Today I learned about Structured Output and how to get an LLM to return information in a predefined format instead of plain text.
+
+I learned how to use Pydantic with LangChain to define the structure of the expected output.
+
+PydanticOutputParser
+
+I learned how to use PydanticOutputParser to:
+
+Define the expected output structure using a Pydantic model
+Generate formatting instructions for the LLM
+Parse the LLM's response into a structured Python object
+Work with different data types such as str, int, float, and List
+
+
 ##  Goal
 
 To build a strong understanding of Generative AI concepts and gradually create real-world applications using LLMs, LangChain, embeddings, RAG, agents, and other GenAI technologies.
